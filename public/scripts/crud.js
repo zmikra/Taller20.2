@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("btnPut").addEventListener("click", () => {
         let id = document.getElementById("inputPutId").value
-        let nameInput = document.getElementById("inputPutNobre");
+        let nameInput = document.getElementById("inputPutNombre");
         let lastNameInput = document.getElementById("inputPutApellido");
         requestCRUD('GET', { id })
             .then((response) => {

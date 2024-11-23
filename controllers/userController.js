@@ -25,7 +25,7 @@ const createUser = (req, res) => {
 const updateUser = (req, res) => {
   const updatedUser = userModel.updateUser(req.params.id, req.body);
   if (updatedUser) {
-    res.status(404).json(updatedUser);
+    res.status(200).json(updatedUser);
   } else {
     res.status(404).json({ message: "Usuario no encontrado" });
   }
